@@ -6,7 +6,8 @@ Despliegue de la aplicación en máquina virtual pesada  (2 puntos)
 En  esta  parte,  se  utilizarán  las  técnicas  más  tradicionales,  que  consisten  en  desplegar  la 
 aplicación como si fuese un monolito, en una o varias máquinas virtuales pesadas.  
 Para ello deberá programar un script en lenguaje Python que sea capaz de realizar una de las 
-siguientes instalaciones:  
+siguientes instalaciones:
+
 • Instalación de la aplicación en una máquina virtual pesada alojada en la infraestructura 
 de google cloud. 
 • Instalación de la aplicación en los servidores s1 a s3 de la práctica creativa 1.  
