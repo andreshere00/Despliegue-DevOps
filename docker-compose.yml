@@ -1,0 +1,41 @@
+version: '3'
+
+services: 
+
+g41-product-page:
+	image: g41/product-page
+	links: 
+		- g41-details
+		- g41-reviews
+	ports:
+		- "9080:9080"
+	enviroment:
+	
+g41-details:
+	image: g41/details
+	links:
+	ports:
+		- "9080"
+	enviroment:
+		SERVICE_VERSION = v1
+		ENABLE_EXTERNAL_BOOK_SERVICE = true
+	
+g41-reviews:
+	image: g41/reviews
+	links:
+		- g41-ratings
+	ports:
+		- "9080"
+	enviroment:
+		ENABLE_RATINGS = true
+		SERVICE_VERSION = v1
+		
+g41-ratings:
+	image: g41/ratings
+	links:
+	ports:
+		- "9080"
+	enviroment:
+		SERVICE_VERSION = v1
+	
+

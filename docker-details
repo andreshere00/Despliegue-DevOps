@@ -1,0 +1,12 @@
+FROM ruby:2.7.1-slim
+
+# RUN apt-get update
+# RUN apt-get install -y ruby-full git
+
+COPY practica_creativa2/bookinfo/src/details /opt/microservices/
+
+WORKDIR /opt/microservices/
+
+EXPOSE 9080
+
+CMD ["ruby", "details.rb", "9080"]

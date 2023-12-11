@@ -1,0 +1,14 @@
+FROM python:3.7.7-slim
+
+RUN apt-get update
+RUN apt-get install -y python3-pip python3-dev
+
+COPY . .
+
+WORKDIR /practica_creativa2/bookinfo/src/productpage
+
+EXPOSE 9080
+
+RUN pip install -r requirements.txt
+
+CMD ["python3", "productpage.py", "9080"]
