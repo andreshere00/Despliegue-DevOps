@@ -80,24 +80,19 @@ contenedor.
 Ejecutar el fichero `details.rb` usando la instrucción ruby y añadir el puerto 
 ex: `["ruby","fichero","puerto"]`.
 - **Reviews:**
- - Compilar y empaquetar los ficheros necesarios ejecutando, dentro de la ruta 
-`src/reviews/reviews-wlpcfg`, el siguiente comando:
-`docker run --rm -u root -v "$(pwd)":/home/gradle/project -w 
-/home/gradle/project gradle:4.8.1 gradle clean build`.
- - Construir la imagen utilizando el fichero `Dockerfile` alojado en el directorio 
-`src/reviews/reviews-wlpcfg` (Inspeccionar el contenido para asignar bien 
-las rutas y variables de entorno). No olvidar respetar la convención de nombres 
-de los contenedores.
+   - Compilar y empaquetar los ficheros necesarios ejecutando, dentro de la ruta  `src/reviews/reviews-wlpcfg`, el siguiente comando: `docker run --rm -u root -v "$(pwd)":/home/gradle/project -w 
+ /home/gradle/project gradle:4.8.1 gradle clean build`.
+   - Construir la imagen utilizando el fichero `Dockerfile` alojado en el directorio `src/reviews/reviews-wlpcfg` (Inspeccionar el contenido para asignar bien  las rutas y variables de entorno). No olvidar respetar la convención de nombres de los contenedores.
 Al construir el fichero `docker-compose`, añadir la variable de entorno 
 `ENABLE_RATINGS=true` para que se muestren los ratings.
 - **Ratings:**
   - Imagen base a utilizar `node:12.18.1-slim`.
- - Copiar los ficheros `package.json` y `ratings.js` a la ruta 
+  - Copiar los ficheros `package.json` y `ratings.js` a la ruta 
 `/opt/microservices/ dentro del contenedor`.
- - Especificar la variable de entorno SERVICE_VERSION con valor v1
- - Instalar las dependencias
- - Exponer el puerto 9080
- -  Ejecutar el fichero `ratings.js`, usando la instrucción `node` y añadir el puerto 
+  - Especificar la variable de entorno SERVICE_VERSION con valor v1
+  - Instalar las dependencias
+  - Exponer el puerto 9080
+  -  Ejecutar el fichero `ratings.js`, usando la instrucción `node` y añadir el puerto 
 ex: `["node","ratings.js","puerto"]`.
 
 - Incluya en la memoria de la práctica las diferencias con la versión de un único contenedor. 
