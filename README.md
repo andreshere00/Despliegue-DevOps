@@ -30,7 +30,7 @@ que tenga asignada la VM, por ejemplo:
 
 Esta parte se ha desarrollado en el script `script1.py`.
 
-## **Segmentación de una aplicación monolítica en microservicios utilizando dockercompose (2 puntos)**
+## **Segmentación de una aplicación monolítica en microservicios utilizando docker compose (2 puntos)**
 
 Como se comentó anteriormente, la aplicación de esta práctica consta de dos servicios 
 desarrollados en Python. Sin embargo, para su puesta en ejecución, se utilizó un único 
@@ -95,5 +95,6 @@ Al construir el fichero `docker-compose`, añadir la variable de entorno
   -  Ejecutar el fichero `ratings.js`, usando la instrucción `node` y añadir el puerto 
 ex: `["node","ratings.js","puerto"]`.
 
-- Incluya en la memoria de la práctica las diferencias con la versión de un único contenedor. 
-- Incluir en la memoria la línea del despliegue del docker-compose
+Incluya en la memoria de la práctica las diferencias con la versión de un único contenedor. 
+
+Incluir en la memoria la línea del despliegue del docker-compose
