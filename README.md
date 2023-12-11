@@ -1,6 +1,6 @@
 # Despliegue de una esplicación escalable.
 
-Script para automatizar el proceso de despliegue de aplicación monoltica sobre MV pesada. 
+Proyecto para la asignatura Centros de Datos y Provisión de Servicios (CDPS) de cuarto curso del grado en Ingeniería de Telecomunicación en la ETSIT-Universidad Politénica de Madrid en el curso 2021/2022.
 
 ## **Despliegue de la aplicación en máquina virtual pesada  (2 puntos)**
 En  esta  parte,  se  utilizarán  las  técnicas  más  tradicionales,  que  consisten  en  desplegar  la 
